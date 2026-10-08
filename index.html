@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luvuyo Khotso Yizani | Software Developer Portfolio</title>
+<meta name="description" content="Luvuyo Khotso Yizani, final-year IT Software Development student in Gauteng, South Africa. Web, Android and database projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b1b3a;--navy2:#13294f;--paper:#f4f6fa;--ink:#101a2e;--mute:#55627a;--line:#d5dbe6;--gold:#f08a24;--blue:#2447d6}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+html,body{max-width:100%;overflow-x:clip}
+body{background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Archivo,system-ui,sans-serif;line-height:1.05}
+a{color:var(--blue)}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.bar{position:sticky;top:0;z-index:5;background:var(--navy);color:#fff;border-bottom:3px solid var(--gold)}
+.bar div{max-width:1100px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.bar a{color:#fff;text-decoration:none;font-weight:500;font-size:.98rem;opacity:.85}
+.bar a:hover{opacity:1;color:var(--gold)}
+.bar .brand{font:900 1.15rem Archivo,sans-serif;margin-right:auto;opacity:1}
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero svg{position:absolute;inset:0;width:100%;height:100%}
+.hero .in{position:relative;max-width:1100px;margin:0 auto;padding:110px 24px 90px}
+.hero h1{font-weight:900;font-size:clamp(3.2rem,9.5vw,7.2rem);letter-spacing:-.035em}
+.hero h1 em{font-style:normal;color:var(--gold);display:block}
+.hero p{max-width:30em;margin:26px 0 32px;font-size:1.2rem;color:#d4dcf0}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:13px 24px;border-radius:6px;margin:0 10px 10px 0;border:2px solid #fff;color:#fff}
+.btn.p{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.strip{background:var(--navy2);color:#fff}
+.strip div{max-width:1100px;margin:0 auto;padding:22px 24px;display:flex;flex-wrap:wrap;gap:12px 56px}
+.strip b{font:800 1.8rem Archivo,sans-serif;color:var(--gold);margin-right:10px}
+.strip span{color:#c3cde4;font-size:.95rem}
+.no{display:inline-block;background:var(--gold);color:var(--navy);font:900 .8rem Archivo,sans-serif;padding:2px 8px;border-radius:5px;margin-right:10px;vertical-align:middle;letter-spacing:.02em}
+.strip .lab{font:800 1.05rem Archivo,sans-serif;color:#fff;border-right:3px solid var(--gold);padding-right:22px;align-self:center}
+.strip{border-top:3px dashed var(--gold)}
+main{max-width:1100px;margin:0 auto;padding:0 24px}
+section{display:grid;grid-template-columns:200px 1fr;gap:24px 48px;padding:80px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border:0}
+h2{font-weight:800;font-size:1.7rem;letter-spacing:-.01em;position:sticky;top:90px;align-self:start;padding-top:2px}
+h2::after{content:"";display:block;width:44px;height:5px;background:var(--gold);margin-top:12px}
+h3{font-weight:800;font-size:1.3rem}
+.txt p{max-width:38em}.txt p+p{margin-top:1em}
+.big{font:800 clamp(1.5rem,3.2vw,2.2rem)/1.2 Archivo,sans-serif;max-width:20em;margin-bottom:20px}
+dl{display:grid;grid-template-columns:170px 1fr}
+dt,dd{padding:14px 0;border-top:1px solid var(--line)}
+dt{font-weight:800;font-family:Archivo,sans-serif}
+dd{color:var(--mute)}dd b{color:var(--ink);font-weight:600}
+.row{display:grid;grid-template-columns:1fr 1.6fr;gap:8px 32px;padding:26px 0;border-top:1px solid var(--line)}
+.row:first-child{padding-top:0;border:0}
+.row .k{color:var(--mute);font-size:.95rem;margin-top:4px}
+.row p{max-width:36em}
+.row .tags{grid-column:2;color:var(--blue);font-weight:600;font-size:.95rem}
+.live{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;font-size:.8rem;padding:2px 10px;border-radius:99px;margin-left:8px;vertical-align:middle}
+.tl>div{padding:0 0 30px 22px;border-left:4px solid var(--gold);margin-left:2px}
+.tl>div:last-child{padding-bottom:0}
+.when{color:var(--mute);font-size:.95rem;margin:2px 0 8px}
+.tl p{max-width:38em}
+.mail{display:block;font:900 clamp(1.5rem,4.2vw,2.8rem) Archivo,sans-serif;letter-spacing:-.02em;color:var(--ink);text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:6px;text-underline-offset:6px;margin:14px 0 8px;overflow-wrap:anywhere}
+.mail:hover{color:var(--blue)}
+footer{background:var(--navy);color:#b7c2dc;font-size:.95rem}
+footer div{max-width:1100px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+footer a{color:var(--gold)}
+@media (max-width:760px){
+ .strip .lab{border:0;padding:0;width:100%}
+ section{grid-template-columns:1fr;padding:56px 0}
+ h2{position:static}
+ dl{grid-template-columns:1fr}dt{padding-bottom:0;border-bottom:0}dd{border-top:0;padding-top:2px}
+ .row{grid-template-columns:1fr}.row .tags{grid-column:1}
+ .hero .in{padding:70px 24px 60px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="bar"><div>
+ <a class="brand" href="#top">Luvuyo Yizani</a>
+ <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+</div></header>
+
+<div class="hero" id="top">
+ <svg viewBox="0 0 1200 560" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+  <g class="court" transform="translate(1200,0) scale(-1,1)" fill="none" stroke="#fff" stroke-width="3" opacity=".16">
+   <rect x="40" y="40" width="1120" height="480" pathLength="1"/>
+   <rect x="40" y="170" width="380" height="220" pathLength="1"/>
+   <circle cx="420" cy="280" r="110" pathLength="1"/>
+   <path d="M40 60 H200 A290 290 0 0 1 200 500 H40" pathLength="1"/>
+   <circle cx="110" cy="280" r="16" pathLength="1"/>
+   <path d="M72 240V320" pathLength="1"/>
+   <circle cx="1160" cy="280" r="140" pathLength="1" opacity="0"/>
+  </g>
+  <g>
+   <animateMotion dur="4s" repeatCount="indefinite" path="M560 480 Q800 40 1090 268 L1090 340" keyPoints="0;.82;1;1" keyTimes="0;.6;.78;1" calcMode="linear"/>
+   <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;.06;.78;.86;1"/>
+   <g>
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1s" repeatCount="indefinite"/>
+    <circle r="20" fill="#f08a24"/>
+    <g fill="none" stroke="#3a1d05" stroke-width="2"><path d="M-20 0H20M0-20V20"/><path d="M-14-14Q-6 0-14 14M14-14Q6 0 14 14"/></g>
+   </g>
+  </g>
+  <circle cx="1090" cy="280" r="16" fill="none" stroke="#f08a24" stroke-width="3" opacity="0">
+   <animate attributeName="r" dur="4s" repeatCount="indefinite" values="16;16;46;46" keyTimes="0;.6;.85;1"/>
+   <animate attributeName="opacity" dur="4s" repeatCount="indefinite" values="0;0;.8;0;0" keyTimes="0;.6;.64;.85;1"/>
+  </circle>
+ </svg>
+ <div class="in">
+  <h1>Luvuyo <em>Yizani.</em></h1>
+  <p>Software developer, basketball coach and referee. I build web apps, Android apps and the databases behind them, and I'm finishing my diploma in 2026.</p>
+  <a class="btn p" href="#projects">See my projects</a><a class="btn" href="https://github.com/Luvuyo14">GitHub</a><a class="btn" href="assets/Luvuyo-Yizani-CV.pdf" download>Download CV</a>
+ </div>
+</div>
+<div class="strip"><div>
+ <p class="lab">Player stats</p>
+ <p><b>84.3%</b><span>Average across 20 modules</span></p>
+ <p><b>16 of 20</b><span>Modules passed with distinction</span></p>
+ <p><b>4</b><span>Featured projects</span></p>
+</div></div>
+
+<main>
+<section id="about">
+ <h2>About</h2>
+ <div class="txt">
+  <p class="big">I turn project briefs into working software.</p>
+  <p>I'm in the final year of my Diploma in Information Technology in Software Development at Rosebank College, based in Gauteng. I've built full-stack web apps, Android apps and database-driven systems, mostly in team projects that follow Agile practices.</p>
+  <p>I like the full path from idea to release: designing the database, building the API, then making the interface easy to use. Away from the screen I volunteer with Games for Hope as a basketball coach and referee, which taught me to plan, communicate clearly and keep a group moving.</p>
+ </div>
+</section>
+
+<section id="skills">
+ <h2>Skills</h2>
+ <dl>
+  <dt>Programming</dt><dd><b>C#, Java, Kotlin, PHP, JavaScript</b>, SQL and PL/SQL</dd>
+  <dt>Web</dt><dd><b>HTML5, CSS3, React, Node.js, ASP.NET MVC</b></dd>
+  <dt>Android</dt><dd><b>Kotlin</b> with MVVM, Room, Hilt and Retrofit</dd>
+  <dt>Databases</dt><dd><b>SQL Server, Oracle SQL, MySQL</b>, MongoDB, relational design</dd>
+  <dt>Tools</dt><dd>Android Studio, Visual Studio, VS Code, Git and GitHub</dd>
+  <dt>Methods</dt><dd>Agile, WBS, Gantt charts</dd>
+  <dt>Design</dt><dd>HCI, accessibility, wireframing</dd>
+  <dt>Working style</dt><dd>Problem solving, teamwork, time management, fast learner</dd>
+ </dl>
+</section>
+
+<section id="projects">
+ <h2>Projects</h2>
+ <div>
+  <div class="row"><div><h3><span class="no">1</span>APEXLedger</h3><div class="k">Web and Android</div></div>
+   <p>Client management and document portal for Ntuli Accountants. A React and Node.js web app and a Kotlin Android app share one MySQL database through a PHP API. The Android app works offline with Room and has a dashboard, document upload and a four-tab admin panel.</p>
+   <div class="tags">React · Node.js · MySQL · Kotlin · Hilt · Room</div>
+   <div class="tags"><a href="https://github.com/PreciousMoloi/ApexLedger">View on GitHub</a></div></div>
+  <div class="row"><div><h3><span class="no">2</span>CommuniServe SA<span class="live">In progress</span></h3><div class="k">Group Android project</div></div>
+   <p>A community services app with a Kotlin client, a Node.js and Express REST API, MongoDB Atlas, Firebase authentication and offline sync with Room. The prototype is due 22 September 2026.</p>
+   <div class="tags">Kotlin · Node.js · MongoDB · Firebase</div></div>
+  <div class="row"><div><h3><span class="no">3</span>CoinKeeper</h3><div class="k">Android · Kotlin developer</div></div>
+   <p>A personal budget tracker that makes saving feel like a game, with local data persistence and a focus on intuitive UI: 30 badges, XP tiers, bill reminders, live expense search and an onboarding wizard.</p>
+   <div class="tags">Kotlin · Room · Android Studio</div>
+   <div class="tags"><a href="https://github.com/PreciousMoloi/CoinkeeperBudgetTrackingApp">View on GitHub</a></div></div>
+  <div class="row"><div><h3><span class="no">4</span>Pastimes eShop</h3><div class="k">Web</div></div>
+   <p>A PHP and MySQL online shop with cart, checkout, login, purchase history and a full admin panel for managing clothing items.</p>
+   <div class="tags">PHP · MySQL · HTML/CSS</div>
+   <div class="tags"><a href="https://github.com/PreciousMoloi/Pastimes-clothing-store-website">View on GitHub</a></div></div>
+ </div>
+</section>
+
+<section id="education">
+ <h2>Education</h2>
+ <div class="tl">
+  <div><h3>Diploma in Information Technology in Software Development</h3>
+   <div class="when">Rosebank College (The Independent Institute of Education) · 2024 to Nov 2026 (expected)</div>
+   <p>NQF Level 6. Core modules: Database Development, C# Programming, Software Engineering. Focus on full-stack apps with secure authentication, role-based access and database integration. Highlights: Work Integrated Learning 3A (99%), Open Source Coding (96%), Introduction to Quantitative Thinking (96%), Advanced Databases (94%), Web Development Introduction (92%), Database Intermediate (91%) and Web Development Intermediate (91%).</p></div>
+  <div><h3>National Senior Certificate (Matric)</h3>
+   <div class="when">Phulong Senior School · 2022</div>
+   <p>English 5, isiZulu 5, Mathematics 4, Physical Sciences 4, Life Sciences 4, Geography 4. Qualified for diploma and degree study.</p></div>
+  <div><h3>Introduction to Personal Computing</h3>
+   <div class="when">Certificate of completion · Rosebank College</div></div>
+ </div>
+</section>
+
+<section id="experience">
+ <h2>Experience</h2>
+ <div class="tl">
+  <div><h3>Basketball coach and referee (volunteer)</h3>
+   <div class="when">Games for Hope · Current</div>
+   <p>I volunteer with Games for Hope, a non-profit supporting sport in township schools. I coach basketball and referee games.</p></div>
+  <div><h3>Basketball coach (volunteer)</h3>
+   <div class="when">Dunnotter Primary School · 2024 to October 2025</div>
+   <p>I coached junior teams of 20+ players: designing drills, strategies and fitness routines, managing equipment and safety, and keeping parents informed. It builds the same habits I use on project teams: planning, clear communication and discipline.</p></div>
+ </div>
+</section>
+
+<section id="contact">
+ <h2>Contact</h2>
+ <div class="txt">
+  <p class="big">Let's build something useful.</p>
+  <p>I'm looking for entry-level software development roles where I can apply what I've built and keep growing.</p>
+  <a class="mail" href="mailto:luvuyoyizani@gmail.com">luvuyoyizani@gmail.com</a>
+  <a class="mail" href="https://github.com/Luvuyo14">github.com/Luvuyo14</a>
+  <a class="mail" href="assets/Luvuyo-Yizani-CV.pdf" download>Download my CV</a>
+ </div>
+</section>
+</main>
+
+<footer><div><span>© <span id="yr">2026</span> Luvuyo Khotso Yizani · Discipline on and off the court</span><a href="#top">Back to top</a></div></footer>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
